@@ -1,0 +1,17 @@
+{
+    "name": "user/pdc10-generating-pdf",
+    "autoload": {
+        "psr-4": {
+            "User\\Pdc10GeneratingPdf\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bmarcko",
+            "email": "bobbymarckocruz@gmail.com"
+        }
+    ],
+    "require": {
+        "fpdf/fpdf": "^1.84"
+    }
+}
