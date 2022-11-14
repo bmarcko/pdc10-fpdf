@@ -4,14 +4,23 @@ include "vendor/autoload.php";
 
 use Fpdf\Fpdf;
 
-$pdf = new Fpdf();
-$pdf->AddFont('Ringbearer');
-$pdf->AddPage();
-$pdf->SetFont('Ringbearer','',35);
-$pdf->Write(10,'The Lord Of The Rings');
+$pdf = new FPDF();
+$pdf->AddFont('NIAGSOL','','NIAGSOL.php');
+$pdf->AddFont('GIGI','','GIGI.php');
+$pdf->AddFont('TEMPSITC','','TEMPSITC.php');
 
+
+$pdf->AddPage();
+$pdf->SetFont('NIAGSOL','',35);
+$pdf->Write(10,'"I am pretty sure I cannott live without being helped!" - Monkey D. Luffy');
 $pdf->Ln(20);
 
-$pdf->SetFont('Ringbearer','',15);
-$pdf->Write(10,'Written By John Ronald Reuel Tolkien');
+$pdf->SetFont('GIGI','',35);
+$pdf->Write(10,'"It is okay to lose your way, just do not lose sight of what you have decided." - Roronoa Zoro');
+$pdf->Ln(20);
+
+$pdf->SetFont('TEMPSITC','',35);
+$pdf->Write(10,'"If you do not take risks, you cannot create a future" - Monkey D. Luffy');
+$pdf->Ln(20);
+
 $pdf->Output();
